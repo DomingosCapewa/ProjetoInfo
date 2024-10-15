@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos de Coleta Próximos</title>
+    <link rel="stylesheet" href="../styles/style_localizacao.css">
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <div class="logo">
+                <a href="../index.html"><img src="../imagens/logo.png" alt="Logo da Reciclagem Eletrônica" /></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><button onclick="location.href='../index.html'">Serviços</button></li> <!--Adicionar as rotas-->
+                    <li><button onclick="location.href='#sobre-nos'">Sobre Nós</button></li>
+                    <li><button onclick="location.href='#contato'">Contato</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Encontre Pontos de Coleta Próximos</h1>
+        <p>Insira seu CEP para ver os pontos de coleta de lixo eletrônico mais próximos:</p>
+
+        <div class="cep-box">
+            <input type="text" id="cepInput" placeholder="Digite seu CEP">
+            <button onclick="buscarPontos()">Buscar</button>
+        </div>
+
+        <div id="resultado" class="resultado">
+            <h2>Pontos de Coleta:</h2>
+            <ul id="enderecos"></ul>
+        </div>
+
+        <p class="mensagem">Lembre-se: o descarte correto faz a diferença no futuro do nosso planeta!</p>
+    </div>
+
+    <script src="../js/script_localizacao.js"></script>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Contato</h3>
+            <p>Endereço: Rua da Reciclagem, 123 - São Paulo, SP</p>
+            <p>Telefone: <a href="tel:+551112345678">(11) 1234-5678</a></p>
+            <p>Email: <a href="mailto:contato@reciclagem.com">contato@reciclagem.com</a></p>
+        </div>
+
+        <div class="social-media">
+            <h3>Siga-nos</h3>
+            <ul>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+
+        <p>&copy; 2024 Reciclagem Eletrônica. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

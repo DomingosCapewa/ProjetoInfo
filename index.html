@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Cycle</title>
+    <link rel="stylesheet" href="../E-Cycle/styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="./imagens/logo.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <button onclick="location.href='#servicos'">Serviços</button>
+            </li>
+            <li>
+              <button onclick="location.href='#sobre-nos'">Sobre Nós</button>
+            </li>
+            <li><button onclick="location.href='#contato'">Contato</button></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro">
+        <img src="https://via.placeholder.com/1200x400" alt="Lixo Eletrônico" />
+        <div class="intro-text">
+          <h2>Reciclagem de Lixo Eletrônico: Preservando o Futuro</h2>
+          <p>
+            O descarte adequado de lixo eletrônico é essencial para proteger o
+            meio ambiente. Conheça como podemos ajudar você a reciclar
+            corretamente.
+          </p>
+        </div>
+      </section>
+
+      <section class="servicos" id="servicos">
+        <div class="servicos-container">
+          <div class="servico-item">
+            <a href="./pages/localização.html">
+              <img src="https://via.placeholder.com/300x300" alt="Localização" />
+            <h3>Localização</h3></a>
+            <p>Encontre o ponto de coleta mais próximo de você.</p>
+          </div>
+          <div class="servico-item">
+            <a href="./pages/consiente.html"
+              ><img
+                src="https://via.placeholder.com/300x300"
+                alt="Conscientização"
+              />
+              <h3>Conscientização</h3></a
+            >
+            <p>Aprenda sobre a importância de reciclar eletrônicos.</p>
+          </div>
+          <div class="servico-item">
+            <img src="https://via.placeholder.com/300x300" alt="Informações" />
+            <h3>Informações</h3>
+            <p>Saiba como descartar seus eletrônicos de maneira correta.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sobre-nos" id="sobre-nos">
+        <h2>Sobre Nós</h2>
+        <div class="sobre-nos-content">
+          <img
+            src="https://via.placeholder.com/400x300"
+            alt="Equipe de Reciclagem"
+          />
+          <p>
+            Somos uma organização dedicada à reciclagem de lixos eletrônicos.
+            Nosso objetivo é educar a população sobre a importância do descarte
+            responsável e fornecer serviços de coleta e reciclagem para garantir
+            que os eletrônicos sejam reciclados de forma adequada. Trabalhamos
+            com diversas empresas e governos para criar um futuro mais
+            sustentável.
+          </p>
+        </div>
+      </section>
+
+      <section class="fale-conosco" id="contato">
+        <h2>Fale Conosco</h2>
+        <form action="#" method="post">
+          <input type="text" name="nome" placeholder="Nome" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="tel" name="telefone" placeholder="Telefone" required />
+          <textarea
+            name="mensagem"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-info">
+        <h3>Contato</h3>
+        <p>Endereço: Rua da Reciclagem, 123 - São Paulo, SP</p>
+        <p>Telefone: (11) 1234-5678</p>
+        <p>Email: contato@reciclagem.com</p>
+      </div>
+
+      <div class="social-media">
+        <h3>Siga-nos</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <p>&copy; 2024 Reciclagem Eletrônica. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
