@@ -151,12 +151,11 @@ footer p {
   padding: 0;
   display: flex;
   gap: 15px;
-  text-align: center;
+ justify-content: center;
 }
-.social-media ul li {
+.social-media {
   color: #def4c7;
   font-weight: bold;
-  align-items: center;
 }
 a {
   color: inherit;
