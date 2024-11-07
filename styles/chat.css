@@ -1,0 +1,116 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f7f1e3, #c7e5d4); /*  bege claro e verde claro suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+
+.chat-container {
+    background-color: #f7f1e3; /* fundo bege claro */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(169, 169, 169, 0.5); /* cinza médio para a sombra */
+    width: 450px;
+    max-height: 550px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #c7e5d4; /* verde claro suave para a borda */
+}
+
+.chat-header {
+    background-color: #f7f1e3; /* bege claro */
+    color: #287d50; /* verde escuro para o nome do Cyborg */
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(169, 169, 169, 0.2); /* sombra suave com cinza médio */
+    font-size: 16px;
+}
+
+#bot-name {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.online-status {
+    background-color: #95e1b1; /* verde claro mais visível */
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chat-box {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    background-color: #f7f1e3; /* Bege claro */
+    height: 400px;
+    border-radius: 0 0 10px 10px;
+}
+
+.message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #a9d5b9; /* Verde claro médio para os balões de mensagem */
+    color: #287d50; /* Verde escuro para o texto */
+}
+
+.user-message {
+    background-color: #c7e5d4; /* Verde claro suave para as mensagens do usuário */
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #a9d5b9; /* Verde claro médio para as mensagens do bot */
+}
+
+.icon {
+    margin-right: 10px;
+    width: 26px;
+}
+
+.input-container {
+    display: flex;
+    padding: 10px;
+    background-color: #f7f1e3; /* Bege claro para o fundo da área de input */
+    border-top: 1px solid #d3d3d3; /* Cinza claro para a borda */
+    border-radius: 0 0 10px 10px;
+}
+
+#user-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #d3d3d3; /* Cinza claro */
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#send-btn {
+    padding: 10px 20px;
+    background-color: #a9a9a9; /* Cinza médio para o botão de enviar */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+/* Mudança de cor para verde ao digitar */
+#user-input:focus + #send-btn {
+    background-color: #287d50; /* Verde escuro ao digitar */
+}
+

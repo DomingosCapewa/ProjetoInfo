@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Cycle</title>
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js" defer></script>
+    <script src="./script.js"></script>
   </head>
 
   <body>
@@ -44,14 +46,14 @@
         <div class="servicos-container">
           <div class="servico-item">
             <a href="./pages/localização.html">
-              <img src="https://via.placeholder.com/300x300" alt="Localização" />
+              <img src="./imagens/localização.png" class="loc" alt="Localização" />
             <h3>Localização</h3></a>
             <p>Encontre o ponto de coleta mais próximo de você.</p>
           </div>
           <div class="servico-item">
             <a href="./pages/consiente.html"
               ><img
-                src="https://via.placeholder.com/300x300"
+                src="./imagens/conscientizacao.png"
                 alt="Conscientização"
               />
               <h3>Conscientização</h3></a
@@ -59,10 +61,12 @@
             <p>Aprenda sobre a importância de reciclar eletrônicos.</p>
           </div>
           <div class="servico-item">
-            <img src="https://via.placeholder.com/300x300" alt="Informações" />
-            <h3>Informações</h3>
+            <a href="./pages/informacao.html">
+            <img src="./imagens/descartar.jpg" alt="Informações" />
+            <h3>Informações</h3></a>
             <p>Saiba como descartar seus eletrônicos de maneira correta.</p>
           </div>
+          
         </div>
       </section>
 
@@ -70,7 +74,7 @@
         <h2>Sobre Nós</h2>
         <div class="sobre-nos-content">
           <img
-            src="https://via.placeholder.com/400x300"
+            src="./imagens/imagem funcionario.jfif"
             alt="Equipe de Reciclagem"
           />
           <p>
@@ -97,6 +101,14 @@
           ></textarea>
           <button type="submit">Enviar</button>
         </form>
+      </section>
+
+      <section class="container-chat">
+        <div class="chat">
+          <a href="./pages/chat.html">
+          <img src="./imagens/chatbot.png" class="robochat"></a>
+         <div class="caixaTexto"><p class="animated"></p></div> 
+        </div>
       </section>
     </main>
 

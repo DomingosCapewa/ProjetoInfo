@@ -49,6 +49,11 @@ nav ul li {
 button{
   max-width: 1000px;
 }
+
+button a.btnlink{
+  color: #fff;
+  text-decoration: none;
+}
 nav ul li button {
   background-color: #61c378;
   color: #fff;
